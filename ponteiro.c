@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+	
+	
+	int variavel = 22;
+	int*pointer = &variavel;
+	
+	printf("Valor da variavel via ponteiro: %d", *pointer);//IMPRIME NA TELA, O VALOR DA VARIAVEL, 22, UMA VEZ QUE ESTÁ APONTANDO PARA A MESMA.
+	printf("\nEndereço de memoria da variavel:  %x", pointer );//NÃO ESTÁ SENDO USADO COMO PONTEIRO, MAS SIM MOSTRANDO O ENDEREÇO EM QUE A VARIAVEL SE ENCONTRA NA MEMORIA.
+	printf("\nValor da variavel: %d", variavel);// VALOR DA VARIAVEL, 22.
+	// O PONTEIRO FUNCIONA LITERALMENTE COMO UM PONTEIRO, MEIO QUE INDICANDO ONDE SE LOCALIZA A VARIAVEL, OUTRA CARACTERISTICA IMPORTANTE DELE, É QUE ELE NÃO RECEBE O VALOR DA VARIAVEL,
+	// MAS REALMENTE FUNCIONA COMO UM PONTEIRO, QUE FALA ONDE A VARIAVEL SE ENCONTRA
+}
