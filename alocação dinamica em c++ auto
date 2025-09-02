@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+#include <memory>
+
+struct Livro{
+	std::string nome;
+	std::string editora;
+	int edicao;	
+};
+int main(){
+	auto livro = std::make_unique<Livro>();
+	std::cout<< "Insira o nome do livro seu merdinha :";
+	std::getline(std::cin, livro->nome);
+	
+	std::cout << "\nNome do livro| " << livro->nome;
+	
+	return 0;
+}
